@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhaoshuang.weixinrecorded.FocusSurfaceView
+        android:id="@+id/sv_ffmpeg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_player"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <com.fooww.videorecord.widgets.MyVideoView
+            android:id="@+id/vv_play"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:padding="8dp"
+            android:layout_margin="7dp"
+            android:tint="@color/white"
+            android:src="@mipmap/icon_back"/>
+        <ImageView
+            android:id="@+id/iv_change_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:layout_margin="7dp"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/video_camera"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="22dp"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/rotia"
+            android:src="@drawable/ic_back_record"/>
+        <ImageView
+            android:id="@+id/iv_music"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:paddingTop="22dp"
+            android:paddingBottom="22dp"
+            android:paddingStart="22dp"
+            android:paddingEnd="28dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_music"
+            android:background="@drawable/rotia"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="22dp"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rotia"
+            android:src="@mipmap/ic_finish"/>
+    </RelativeLayout>
+
+    <com.fooww.videorecord.widgets.RecordedButton
+        android:id="@+id/rb_start"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"/>
+
+</RelativeLayout>

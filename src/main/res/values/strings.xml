@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeiXinRecordedDemo</string>
+    <string name="label_bgms">选择音乐</string>
+    <string name="label_sure">确定</string>
+    <string name="label_social_share">社交分享</string>
+    <string name="label_edit_share">编辑分享</string>
+    <string name="label_save">保存视频</string>
+    <string name="label_delete">删除</string>
+    <string name="label_cancel">取消</string>
+    <string name="txt_warn_add_music">添加背景音乐失败，请重试</string>
+</resources>

@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fooww.weixinrecorded">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera"  android:required="false"/>
+    <application>
+
+        <activity
+            android:name="com.fooww.videorecord.MediaRecorderActivity"
+            android:theme="@style/AppTheme" android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="user"
+            android:hardwareAccelerated="true"
+            >
+            <intent-filter>
+                <action android:name="fooww_video_record" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
